@@ -1,0 +1,60 @@
+# Extra css for admonitions color schemes
+
+/* 1. Global Variable Override */
+:root {
+  /* This variable controls the default thick left line color */
+  --md-admonition-fg-color--note: #360b1d !important;
+}
+
+/* 2. Target the base wrapper layout across all notes */
+.md-typeset .admonition,
+.md-typeset details {
+  /* Erases any generic fallback theme borders entirely */
+  border-color: transparent !important;
+}
+
+/* 3. Force your wine color on all 4 outer edges cleanly */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border: 1px solid #360b1d !important; 
+  border-left-width: 0.2rem !important; /* Retains the heavy accent line */
+  
+  /* Wipes out the fallback blue shadow glow stack */
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05), 0 0 0 1px #360b1d !important;
+}
+
+/* 4. Style the Header/Title Bar Area */
+.md-typeset .note > .admonition-title,
+.md-typeset details.note > summary {
+  background-color: #360b1d !important;
+  color: #ffffff !important;           /* Title text white */
+}
+
+/* 5. Style the Icon inside the Header Bar */
+.md-typeset .note > .admonition-title::before,
+.md-typeset details.note > summary::before {
+  background-color: #ffffff !important; /* Note icon white */
+}
+
+
+/* ==========================================
+   KEEP YOUR CUSTOM TYPE STYLES BELOW THIS LINE
+   ========================================== */
+
+.md-typeset .admonition.custom, 
+.md-typeset details.some-custom-class { 
+  border-left-color: #8a2be2; 
+}
+
+/* Updated header background color and text color for readability */
+.md-typeset .custom > .admonition-title, 
+.md-typeset details.some-custom-class > summary { 
+  background-color: #f7f7d0 !important; /* New light cream background */
+  color: #360b1d !important;            /* Dark wine text for clear contrast */
+  border-bottom: 0.1rem solid rgba(138, 43, 226, 0.2); 
+}
+
+.md-typeset .custom > .admonition-title::before, 
+.md-typeset details.some-custom-class > summary::before { 
+  background-color: #360b1d; 
+}
