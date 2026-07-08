@@ -1,10 +1,10 @@
 ![wine](images/wine-chocolate-books.png)
 
-# Welcome to the St. John Vianney women's book grroup page
+# Welcome to the St. John Vianney women's book group page
 
 The first Tuesday of each month at 7:00pm, our women’s book group gathers with wine and chocolate to discuss a book that's been chosen by the group. 
 
-**You do not need to read the book to come to the book group.**
+**You don't need to read the book to come to the book group.**
 
 ## Address
 
