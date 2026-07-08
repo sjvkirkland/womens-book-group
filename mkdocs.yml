@@ -5,7 +5,7 @@ site_author: Angela Bartz
 site_url: https://sjvkirkland.github.io/womens-book-group/
 
 # Copyright
-copyright: Copyright &copy 2024 SJV Kirkland women's group
+copyright: Copyright &copy 2026 SJV Kirkland women's book group
 
 # Add extensions for Markdown processing, including support for attributes, Markdown in HTML, and admonitions.
 markdown_extensions:
@@ -29,7 +29,7 @@ theme:
     
     # Palette toggle for light mode
     - scheme: default
-      primary: blue grey
+      primary: brown
       toggle:
         icon: material/lightbulb 
         name: Switch to dark mode
@@ -41,3 +41,11 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
 
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Site navigation
+nav: 
+  - Welcome: index.md
+  - Previous books: previous-books.md
