@@ -42,6 +42,11 @@ theme:
         name: Switch to light mode
 
 # Extra CSS
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/sjvkirkland
+
 extra_css:
   - stylesheets/extra.css
 
