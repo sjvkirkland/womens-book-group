@@ -27,4 +27,4 @@ Kirkland, WA 98034
 
 ## Join the email list
 
-To be added to the SJV women's book group email list, contact [Ana Klepper](mailto:Aklepper@sjvkirkland.org).
+To be added to the SJV women's book group email list, contact Ana Klepper at [aklepper@sjvkirkland.org](mailto:aklepper@sjvkirkland.org).
