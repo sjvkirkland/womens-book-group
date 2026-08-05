@@ -41,7 +41,7 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
 
-# Extra CSS
+# Extras
 extra:
   social:
     - icon: fontawesome/brands/facebook
@@ -50,7 +50,10 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - js/subscribe.js
+
 # Site navigation
 nav: 
   - Welcome: index.md
-  - Previous books: previous-books.md
+  - Recent previous books: previous-books.md
