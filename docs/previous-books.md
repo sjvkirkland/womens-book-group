@@ -1,5 +1,6 @@
-# Previous books
+# Recent previous books
 
+- August 2026: ***Band of Sisters*** by Lauren Willig
 - July 2026: ***Theo of Golden*** by Allen Levi
 - June 2026: ***One Long River of Song*** by Brian Doyle
 - May 2026: ***West with the Night: A Memoir*** by Beryl Markham
