@@ -17,9 +17,15 @@ No need to bring anything - just yourself.
 
     The nation’s foremost leader in efforts to abolish the death penalty shares the story of her growth as a spiritual leader, speaks out about the challenges of the Catholic Church, and shows that joy and religion are not mutually exclusive. 
 
-- October 6, 2026: ***How to Read a Book*** by Mortimer J. Adler & Charles Van Doren
+- October 6, 2026: ***How to Read a Book*** by Monica Wood
 
-    A timeless classic on becoming a more thoughtful and engaged reader, How to Read a Book explores how to move beyond simply finishing books to truly understanding them. Adler and Van Doren introduce four levels of reading—from elementary to syntopical—and provide practical techniques for analyzing ideas, evaluating arguments, and getting more from every book. Whether you're reading fiction, history, science, or philosophy, this guide offers tools to become a more active, insightful reader.
+    In this emotional book club fiction, Violet Powell, a twenty-two-year-old from Abbott Falls, Maine, is being released from prison after serving twenty-two months for a drunk-driving crash that killed a local kindergarten teacher.
+    
+    Harriet Larson, a retired English teacher who runs the prison book club, is facing the unsettling prospect of an empty nest.
+    
+    Frank Daigle, a retired machinist, hasn’t yet come to grips with the complications of his marriage to the woman Violet killed.
+    
+    When the three encounter each other one morning in a bookstore in Portland—Violet to buy the novel she was reading in the prison book club before her release, Harriet to choose the next title for the women who remain, and Frank to dispatch his duties as the store handyman—their lives begin to intersect in transformative ways.
 
 - November 3, 2026: ***Orbital*** by Samantha Harvey
 
