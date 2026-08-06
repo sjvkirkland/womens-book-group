@@ -5,7 +5,7 @@ site_author: Angela Bartz
 site_url: https://sjvkirkland.github.io/womens-book-group/
 
 # Copyright
-copyright: Copyright &copy 2026 SJV Kirkland women's book group
+copyright: Copyright &copy 2026 SJV Kirkland Women's Book Group
 
 # Add extensions for Markdown processing, including support for attributes, Markdown in HTML, and admonitions.
 markdown_extensions:
