@@ -8,7 +8,7 @@ No need to bring anything - just yourself.
 
 **You don't need to read the book to come to the book group.**
 
-## Upcoming books
+## Next book
 
 !!! custom "Note"
     At times, books can be waitlisted in local libraries for several weeks. Book choices are subject to change if availability is limited. Refer to this site for the most up-to-date book selections.
@@ -16,6 +16,8 @@ No need to bring anything - just yourself.
 - September 1, 2026: ***River of Fire*** by Sister Helen Prejean
 
     The nation’s foremost leader in efforts to abolish the death penalty shares the story of her growth as a spiritual leader, speaks out about the challenges of the Catholic Church, and shows that joy and religion are not mutually exclusive. 
+
+## Upcoming books
 
 - October 6, 2026: ***How to Read a Book*** by Monica Wood
 
