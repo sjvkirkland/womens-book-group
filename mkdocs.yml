@@ -52,6 +52,7 @@ extra_css:
 
 extra_javascript:
   - js/subscribe.js
+  - js/books.js
 
 # Site navigation
 nav: 
