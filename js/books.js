@@ -22,6 +22,41 @@
     renderPreviousBooks(data.previous || []);
   };
 
+  window.receiveFreshBookClubBooks =
+    function (data) {
+      if (!data || data.error) {
+        console.error(
+          "Fresh book data could not be loaded."
+        );
+
+        return;
+      }
+
+      /*
+      * Save the latest version for the next page load.
+      */
+      try {
+        localStorage.setItem(
+          "bookClubBooks",
+          JSON.stringify({
+            savedAt: Date.now(),
+            savedDate: getLocalDateKey(),
+            data: data
+          })
+       );
+      } catch (error) {
+        console.warn(
+          "Unable to cache book data.",
+          error
+        );
+      }
+
+      /*
+      * Update the visible page.
+      */
+      window.renderBookClubBooks(data);
+    };
+
 
   /**
    * Renders the next scheduled book.
@@ -225,15 +260,27 @@
   }
 
 
+/**
+ * Returns today's local date as YYYY-MM-DD.
+ */
+  function getLocalDateKey() {
+    const now = new Date();
+
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+
+    return `${year}-${month}-${day}`;
+  }
+
+
   /**
    * Loads the Apps Script endpoint as JSONP.
    */
   function loadBookData() {
     if (
       !BOOKS_API_URL ||
-      BOOKS_API_URL.includes(
-        "YOUR_APPS_SCRIPT"
-      )
+      BOOKS_API_URL.includes("YOUR_APPS_SCRIPT")
     ) {
       console.error(
         "The book API URL has not been configured."
@@ -243,26 +290,65 @@
       return;
     }
 
+    /*
+    * Show cached data immediately, if available.
+    */
+    try {
+      const cached =
+        localStorage.getItem("bookClubBooks");
+
+      if (cached) {
+        const parsed = JSON.parse(cached);
+
+        if (
+          parsed &&
+          parsed.data &&
+          parsed.savedDate === getLocalDateKey()
+        ) {
+          window.renderBookClubBooks(parsed.data);
+        }
+      }
+    } catch (error) {
+      console.warn(
+        "Unable to read cached book data.",
+        error
+      );
+    }
+
+    /*
+    * Then request fresh data from Apps Script.
+    */
     const script =
       document.createElement("script");
 
     script.src =
       BOOKS_API_URL +
-      "?callback=renderBookClubBooks";
+      "?callback=receiveFreshBookClubBooks" +
+      "&t=" +
+      Date.now();
 
     script.async = true;
 
     script.onerror = function () {
       console.error(
-        "Unable to load book-club data."
+        "Unable to refresh book-club data."
       );
 
-      showBooksError();
+      /*
+      * Don't replace cached content with an error
+      * if we already displayed useful data.
+      */
+      const hasCachedData =
+        localStorage.getItem("bookClubBooks");
+
+      if (!hasCachedData) {
+        showBooksError();
+      }
     };
 
     document.head.appendChild(script);
   }
 
-
   loadBookData();
+
 })();
