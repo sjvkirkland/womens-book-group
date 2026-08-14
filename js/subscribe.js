@@ -1,43 +1,76 @@
-document
-.getElementById("subscribeForm")
-.addEventListener("submit", async function(event){
+(function () {
+  "use strict";
 
-    event.preventDefault();
+  const SUBSCRIBE_URL =
+    "https://script.google.com/macros/s/AKfycbzNN3bLJXTwzVxjpVrlbq-E_elBsGVjg2qMSKYJCUwDHnX_ToVhoeerVtQqF4jHxesz/exec";
 
-    const name =
-        document.getElementById("name").value;
+  document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+      const form =
+        document.getElementById(
+          "subscribeForm"
+        );
 
-    const email =
-        document.getElementById("email").value;
+      const message =
+        document.getElementById(
+          "message"
+        );
 
-    const response =
-        await fetch("https://script.google.com/macros/s/AKfycbzNN3bLJXTwzVxjpVrlbq-E_elBsGVjg2qMSKYJCUwDHnX_ToVhoeerVtQqF4jHxesz/exec",{
+      if (!form) {
+        console.error(
+          "Subscribe form was not found."
+        );
+        return;
+      }
 
-            method:"POST",
+      form.addEventListener(
+        "submit",
+        function (event) {
+          event.preventDefault();
 
-            body:JSON.stringify({
+          const name =
+            document
+              .getElementById("name")
+              .value
+              .trim();
 
-                name:name,
+          const email =
+            document
+              .getElementById("email")
+              .value
+              .trim();
 
-                email:email
+          if (!name || !email) {
+            message.textContent =
+              "Please enter your name and email address.";
+            return;
+          }
 
-            })
+          const payload =
+            JSON.stringify({
+              name: name,
+              email: email
+            });
 
-        });
+          const queued =
+            navigator.sendBeacon(
+              SUBSCRIBE_URL,
+              payload
+            );
 
-    if(response.ok){
+          if (!queued) {
+            message.textContent =
+              "Sorry, something went wrong. Please try again.";
+            return;
+          }
 
-        document.getElementById("message").innerHTML =
+          message.textContent =
             "Thank you for joining our mailing list!";
 
-        document.getElementById("subscribeForm").reset();
-
+          form.reset();
+        }
+      );
     }
-    else{
-
-        document.getElementById("message").innerHTML =
-            "Sorry, something went wrong.";
-
-    }
-
-});
+  );
+})();
