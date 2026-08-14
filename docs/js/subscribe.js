@@ -2,7 +2,7 @@
   "use strict";
 
   const SUBSCRIBE_URL =
-    "https://script.google.com/macros/s/AKfycbyshBSidrhqDFlLGVR4sI0PGdObQgYZXZkg50SPSgVXttuyoDmDxGEQqrhXsYHbUQSA/exec";
+    "https://script.google.com/macros/s/AKfycbwzqsoc7u6f1xqRvdbWjtHQl9xzOTK2_QvYlqRd_v7gmVKI9wM4mU-50RQdF0gLrGG2/exec";
 
   document.addEventListener(
     "DOMContentLoaded",
