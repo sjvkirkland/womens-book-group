@@ -111,3 +111,24 @@
 
 }
 
+/* ==========================================
+   IMAGE STYLING FOR BOOKS
+   ========================================== */
+
+.book-entry {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.book-cover {
+  width: 110px;
+  height: 165px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.book-entry-details {
+  flex: 1;
+}

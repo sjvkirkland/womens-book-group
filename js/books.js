@@ -145,6 +145,21 @@
     container.innerHTML = `<ul>${items}</ul>`;
   }
 
+  /**
+   * Builds a display URL for a Google Drive cover image.
+   */
+  function getCoverImageUrl(fileId) {
+    if (!fileId) {
+      return "";
+    }
+
+    return (
+      "https://drive.google.com/thumbnail" +
+      "?id=" +
+      encodeURIComponent(fileId) +
+      "&sz=w300"
+    );
+  }
 
   /**
    * Builds the detailed display used for Next Book
@@ -163,6 +178,9 @@
     const synopsis =
       escapeHtml(book.synopsis);
 
+    const coverUrl =
+      getCoverImageUrl(book.coverImage);
+
     const authorText =
       author ? ` by ${author}` : "";
 
@@ -171,15 +189,31 @@
         ? `<p>${synopsis}</p>`
         : "";
 
+    const coverHtml =
+      coverUrl
+        ? `
+          <img
+            class="book-cover"
+            src="${escapeHtml(coverUrl)}"
+            alt="Cover of ${title}"
+            loading="lazy"
+          >
+        `
+        : "";
+
     return `
       <div class="book-entry">
-        <p>
-          <strong>
-            ${date}: ${title}${authorText}
-          </strong>
-        </p>
+        ${coverHtml}
 
-        ${synopsisHtml}
+        <div class="book-entry-details">
+          <p>
+            <strong>
+              ${date}: ${title}${authorText}
+            </strong>
+          </p>
+
+          ${synopsisHtml}
+        </div>
       </div>
     `;
   }
