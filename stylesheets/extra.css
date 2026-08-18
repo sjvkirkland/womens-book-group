@@ -115,6 +115,10 @@
    IMAGE STYLING FOR BOOKS
    ========================================== */
 
+.book-entry-details > p:first-child {
+  margin-top: 0;
+}
+
 .book-entry {
   display: flex;
   gap: 1.25rem;
