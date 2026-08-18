@@ -200,9 +200,11 @@
     return `
       <div class="book-entry">
         <p class="book-entry-title">
-          <strong>
-            ${date}: ${title}${authorText}
-          </strong>
+          <strong>${date}: </strong>
+          <strong><em>
+            ${title}
+          </em></strong>
+          ${authorText}
         </p>
 
         <div class="book-entry-content">
