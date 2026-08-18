@@ -115,15 +115,27 @@
    IMAGE STYLING FOR BOOKS
    ========================================== */
 
-.book-entry-details > p:first-child {
-  margin-top: 0;
+.book-entry {
+  margin-bottom: 1.5rem;
 }
 
-.book-entry {
+.book-entry-title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.book-entry-content {
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
+}
+
+.book-entry-details {
+  flex: 1;
+}
+
+.book-entry-details > p:first-child {
+  margin-top: 0;
 }
 
 .book-cover {
@@ -132,8 +144,4 @@
   object-fit: contain;
   flex-shrink: 0;
   padding-top: 6px;
-}
-
-.book-entry-details {
-  flex: 1;
 }
