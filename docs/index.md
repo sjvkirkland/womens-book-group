@@ -9,7 +9,7 @@ No need to bring anything - just yourself.
 **You don't need to read the book to come to the book group.**
 
 !!! custom "Note"
-    At times, books can be waitlisted in local libraries for several weeks. Book choices are subject to change if availability is limited. Refer to this site for the most up-to-date book selections.
+    At times, books can be waitlisted in local libraries for several weeks. If availability is limited, then a book choice is subject to change. Refer to this site for the most up-to-date book selections.
 
 ## Next book
 
