@@ -161,10 +161,6 @@
     );
   }
 
-  /**
-   * Builds the detailed display used for Next Book
-   * and Upcoming Books.
-   */
   function buildDetailedBookHtml(book) {
     const date =
       formatBookDate(book.date);
@@ -203,16 +199,18 @@
 
     return `
       <div class="book-entry">
-        ${coverHtml}
+        <p class="book-entry-title">
+          <strong>
+            ${date}: ${title}${authorText}
+          </strong>
+        </p>
 
-        <div class="book-entry-details">
-          <p>
-            <strong>
-              ${date}: ${title}${authorText}
-            </strong>
-          </p>
+        <div class="book-entry-content">
+          ${coverHtml}
 
-          ${synopsisHtml}
+          <div class="book-entry-details">
+            ${synopsisHtml}
+          </div>
         </div>
       </div>
     `;
