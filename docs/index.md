@@ -27,9 +27,24 @@ No need to bring anything - just yourself.
 
 ## Address
 
-St. John Vianney Church<br>
-12600 84th Avenue NE<br>
-Kirkland, WA 98034
+<div class="church-location">
+  <div class="church-address">
+    <p>
+      <strong>St. John Vianney Church</strong><br>
+      12600 84th Avenue NE<br>
+      Kirkland, WA 98034
+    </p>
+  </div>
+
+  <div class="book-group-map">
+    <iframe
+      src="https://www.google.com/maps?q=St.+John+Vianney+Church,+12600+84th+Avenue+NE,+Kirkland,+WA+98034&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Map showing St. John Vianney Church in Kirkland">
+    </iframe>
+  </div>
+</div>
 
 
 ## Join Our Email List
