@@ -1,6 +1,6 @@
 # project information
 
-site_name: SJV Kirkland women's book group
+site_name: SJV Kirkland Women's Book Group
 site_author: Angela Bartz
 site_url: https://sjvkirkland.github.io/womens-book-group/
 
@@ -57,4 +57,4 @@ extra_javascript:
 # Site navigation
 nav: 
   - Welcome: index.md
-  - Recent previous books: previous-books.md
+  - Recent Previous Books: previous-books.md

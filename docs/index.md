@@ -1,10 +1,10 @@
 ![wine](images/wine-chocolate-books.png)
 
-# St. John Vianney women's book group
+# St. John Vianney Women's Book Group
 
-Welcome to the [St. John Vianney](https://sjvkirkland.org/) women's book group site!
+Welcome to the [St. John Vianney](https://sjvkirkland.org/) Women's Book Group site!
 
-The first Tuesday of each month at 7:00pm, the St. John Vianney women’s book group gathers in the SJV office with wine and chocolate to discuss a book that's been chosen by the group. 
+The first Tuesday of each month at 7:00pm, the St. John Vianney Women’s Book Group gathers in the SJV office with wine and chocolate to discuss a book that's been chosen by the group. 
 
 No need to bring anything - just yourself. 
 
@@ -13,13 +13,13 @@ No need to bring anything - just yourself.
 !!! custom "Note"
     At times, books can be waitlisted in local libraries for several weeks. If availability is limited, then a book choice is subject to change. Refer to this site for the most up-to-date book selections.
 
-## Next book
+## Next Book
 
 <div id="next-book-dynamic">
   <p>Loading next book...</p>
 </div>
 
-## Upcoming books
+## Upcoming Books
 
 <div id="upcoming-books-dynamic">
   <p>Loading upcoming books...</p>
@@ -32,12 +32,12 @@ St. John Vianney Church<br>
 Kirkland, WA 98034
 
 
-## Join our email list
+## Join Our Email List
 
 <section id="subscribe">
 
     <p>
-        Interested in joining our women's book group?
+        Interested in joining our Women's Book Group?
         Enter your information below to receive meeting reminders,
         upcoming book selections, and special announcements. 
     </p>
