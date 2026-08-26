@@ -6,7 +6,7 @@ Welcome to the [St. John Vianney](https://sjvkirkland.org/) Women's Book Group s
 
 The first Tuesday of each month at 7:00pm, the St. John Vianney Women’s Book Group gathers in the SJV office with wine and chocolate to discuss a book that's been chosen by the group. 
 
-No need to bring anything - just yourself. 
+No need to bring anything - just yourself. To view logs, select a function and click the "Run" button in the toolbar.
 
 **You don't need to read the book to come to the book group.**
 
@@ -30,7 +30,7 @@ No need to bring anything - just yourself.
 <div class="church-location">
   <div class="church-address">
     <p>
-      <strong>St. John Vianney Church</strong><br>
+      <strong>St. John Vianney Catholic Church</strong><br>
       12600 84th Avenue NE<br>
       Kirkland, WA 98034
     </p>
@@ -41,7 +41,7 @@ No need to bring anything - just yourself.
       src="https://www.google.com/maps?q=St.+John+Vianney+Church,+12600+84th+Avenue+NE,+Kirkland,+WA+98034&output=embed"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
-      title="Map showing St. John Vianney Church in Kirkland">
+      title="Map showing St. John Vianney Catholic Church in Kirkland">
     </iframe>
   </div>
 </div>
