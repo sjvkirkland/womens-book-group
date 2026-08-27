@@ -6,7 +6,7 @@ Welcome to the [St. John Vianney](https://sjvkirkland.org/) Women's Book Group s
 
 The first Tuesday of each month at 7:00pm, the St. John Vianney Women’s Book Group gathers in the SJV office with wine and chocolate to discuss a book that's been chosen by the group. 
 
-No need to bring anything - just yourself. To view logs, select a function and click the "Run" button in the toolbar.
+No need to bring anything - just yourself. 
 
 **You don't need to read the book to come to the book group.**
 
