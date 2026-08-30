@@ -172,7 +172,7 @@
       escapeHtml(book.author);
 
     const synopsis =
-      escapeHtml(book.synopsis);
+      linkifyText(book.synopsis);
 
     const coverUrl =
       getCoverImageUrl(book.coverImage);
@@ -293,10 +293,37 @@
     });
   }
 
+  /**
+   * Escapes text and converts URLs into safe links.
+   */
+  function linkifyText(value) {
+    if (
+      value === null ||
+      value === undefined
+    ) {
+      return "";
+    }
 
-/**
- * Returns today's local date as YYYY-MM-DD.
- */
+    const escaped =
+      escapeHtml(value);
+
+    return escaped.replace(
+      /(https?:\/\/[^\s<]+)/g,
+      url => {
+        return `
+          <a
+            href="${url}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >${url}</a>
+        `;
+      }
+    );
+  }
+
+  /**
+   * Returns today's local date as YYYY-MM-DD.
+   */
   function getLocalDateKey() {
     const now = new Date();
 
