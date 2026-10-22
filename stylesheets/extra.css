@@ -63,52 +63,40 @@
 # Extra css for subscribe section
 
 #subscribe {
-
     max-width:600px;
     margin:40px auto;
     padding:25px;
-
     background:white;
-
     border-radius:12px;
-
     box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
 
+/* Match subscription form width to suggestion form */
+
+#subscribeForm {
+  max-width: 600px;
 }
 
 #subscribe input{
-
     width:100%;
     padding:12px;
     border:1px solid #ccc;
-
     margin-bottom:15px;
-
     box-sizing:border-box;
     border-radius:6px;
-
 }
 
 #subscribe button{
-
     padding:12px 30px;
-
     background:#360b1d;
-
     color:white;
-
     border:none;
-
     border-radius:6px;
-
     cursor:pointer;
-
 }
 
 #subscribe button:hover{
-
     background:#6e1f4d;
-
 }
 
 /* ==========================================
@@ -188,9 +176,11 @@
    BOOK SUGGESTION FORM STYLING
    ========================================== */
 
-.book-suggestion-form {
+.book-suggestion-form,
+#subscribeForm {
+  width: 100%;
   max-width: 600px;
-  margin-top: 1rem;
+  box-sizing: border-box;
 }
 
 .book-suggestion-form label {
@@ -198,7 +188,7 @@
   margin-top: 1rem;
   margin-bottom: 0.35rem;
   font-weight: 600;
-}
+} 
 
 .book-suggestion-form input,
 .book-suggestion-form textarea {
@@ -210,9 +200,10 @@
   border-radius: 6px;
   background: var(--md-default-bg-color);
   color: var(--md-default-fg-color);
-  font: inherit;
+  font-family: inherit;
+  font-size: 0.7rem; 
 }
-
+ 
 .book-suggestion-form input:focus,
 .book-suggestion-form textarea:focus {
   outline: 2px solid var(--md-accent-fg-color);
@@ -224,14 +215,30 @@
   padding: 0.65rem 1.25rem;
   border: 0;
   border-radius: 6px;
-  background: var(--md-primary-fg-color);
+  background:#360b1d;
   color: var(--md-primary-bg-color);
   font: inherit;
-  font-weight: 600;
   cursor: pointer;
+}
+
+.book-suggestion-form button:hover{
+    background:#6e1f4d;
 }
 
 .book-suggestion-form button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* ==========================================
+   HIDE THE BOOK SUGGESTION SPAM TRAP
+   ========================================== */
+
+.suggestion-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
