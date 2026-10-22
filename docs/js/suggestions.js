@@ -38,6 +38,10 @@
 
           const suggestion = {
             action: "suggestBook",
+            website: document
+              .getElementById("suggestion-website")
+              .value
+              .trim(),
             book: document
               .getElementById("suggestion-book")
               .value

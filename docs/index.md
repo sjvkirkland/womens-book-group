@@ -31,6 +31,23 @@ Have a book you'd love to read with the group? Share your suggestion! We're alwa
 
 <form id="book-suggestion-form" class="book-suggestion-form">
 
+  <!-- Spam trap: leave this field empty -->
+  <div
+    class="suggestion-honeypot"
+    aria-hidden="true"
+  >
+    <label for="suggestion-website">
+      Website
+    </label>
+    <input
+      type="text"
+      id="suggestion-website"
+      name="website"
+      tabindex="-1"
+      autocomplete="off"
+    >
+  </div>
+
   <label for="suggestion-book">Book title *</label>
   <input
     type="text"
