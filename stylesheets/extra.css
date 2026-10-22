@@ -741,3 +741,13 @@
   }
 }
 
+
+/* Keep the site name visible in the header */
+.md-header__title .md-header__topic {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+.md-header__title .md-header__topic[data-md-component="header-topic"] {
+  display: none !important;
+}
