@@ -354,17 +354,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-involved" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get Involved
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#location" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -441,17 +430,6 @@
     <span class="md-ellipsis">
       
         What We're Reading
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-involved" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get Involved
       
     </span>
   </a>
@@ -550,148 +528,147 @@
 
 </div>
 
-<hr>
+<div class="get-involved-section">
 
-<h2 id="get-involved">Get Involved</h2>
-<div class="get-involved">
+  <h2>Get Involved</h2>
 
-  <details class="involvement-card">
-    <summary>
-      <span class="involvement-title">Join Our Email List</span>
-      <span class="involvement-description">
-        Receive meeting reminders, upcoming book selections,
-        and special announcements.
-      </span>
-      <span class="involvement-toggle" aria-hidden="true">
-        <span class="involvement-toggle-text"></span>
-      </span>
-    </summary>
+  <div class="get-involved">
 
-    <div class="involvement-content">
+    <details class="involvement-card">
+      <summary>
+        <span class="involvement-title">Join Our Email List</span>
+        <span class="involvement-description">
+          Receive meeting reminders, upcoming book selections,
+          and special announcements.
+        </span>
+        <span class="involvement-toggle" aria-hidden="true">
+          <span class="involvement-toggle-text"></span>
+        </span>
+      </summary>
 
-      <section id="subscribe">
+      <div class="involvement-content">
 
-        <form id="subscribeForm">
+        <section id="subscribe">
 
-          <!-- Spam protection: hidden honeypot field -->
-          <div class="form-honeypot" aria-hidden="true">
-              <label for="subscribe-website">Website</label>
-              <input
-                  type="text"
-                  id="subscribe-website"
-                  name="website"
-                  tabindex="-1"
-                  autocomplete="off">
+          <form id="subscribeForm">
+
+            <!-- Spam protection: hidden honeypot field -->
+            <div class="form-honeypot" aria-hidden="true">
+                <label for="subscribe-website">Website</label>
+                <input
+                    type="text"
+                    id="subscribe-website"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off">
+            </div>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your name"
+                required>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email address"
+                required>
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+          </form>
+
+          <p id="message" aria-live="polite"></p>
+
+        </section>
+
+      </div>
+    </details>
+
+    <details class="involvement-card">
+      <summary>
+        <span class="involvement-title">Suggest a Book</span>
+        <span class="involvement-description">
+          Have a book you'd love to read with the group?
+          Share your suggestion here!
+        </span>
+        <span class="involvement-toggle" aria-hidden="true">
+          <span class="involvement-toggle-text"></span>
+        </span>
+      </summary>
+
+      <div class="involvement-content">
+
+        <form id="book-suggestion-form" class="book-suggestion-form">
+
+          <!-- Spam trap: leave this field empty -->
+          <div
+            class="form-honeypot"
+            aria-hidden="true"
+          >
+            <label for="suggestion-website">
+              Website
+            </label>
+            <input
+              type="text"
+              id="suggestion-website"
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+            >
           </div>
 
-          <input
-              type="text"
-              id="name"
-              placeholder="Your name"
-              required>
-
-          <input
-              type="email"
-              id="email"
-              placeholder="Email address"
-              required>
-
-          <button type="submit">
-              Subscribe
-          </button>
-
-    </form>
-
-    <p id="message" aria-live="polite"></p>
-
-  </section>
-
-</div>
-</details>
-
-  <details class="involvement-card">
-    <summary>
-      <span class="involvement-title">Suggest a Book</span>
-      <span class="involvement-description">
-        Have a book you'd love to read with the group?
-        Share your suggestion here!
-      </span>
-      <span class="involvement-toggle" aria-hidden="true">
-        <span class="involvement-toggle-text"></span>
-      </span>
-    </summary>
-
-    <div class="involvement-content">
-
-      <form id="book-suggestion-form" class="book-suggestion-form">
-
-        <!-- Spam trap: leave this field empty -->
-        <div
-          class="form-honeypot"
-          aria-hidden="true"
-        >
-          <label for="suggestion-website">
-            Website
-          </label>
+        <!--  <label for="suggestion-book">Book title *</label> -->
           <input
             type="text"
-            id="suggestion-website"
-            name="website"
-            tabindex="-1"
-            autocomplete="off"
+            id="suggestion-book"
+            name="book"
+            required
+            maxlength="200"
+            placeholder="Book title (required)"
           >
-        </div>
 
-      <!--  <label for="suggestion-book">Book title *</label> -->
-        <input
-          type="text"
-          id="suggestion-book"
-          name="book"
-          required
-          maxlength="200"
-          placeholder="Book title (required)"
-        >
+        <!--  <label for="suggestion-author">Author</label> -->
+          <input
+            type="text"
+            id="suggestion-author"
+            name="author"
+            maxlength="200"
+            placeholder="Author (optional)"
+          >
 
-      <!--  <label for="suggestion-author">Author</label> -->
-        <input
-          type="text"
-          id="suggestion-author"
-          name="author"
-          maxlength="200"
-          placeholder="Author (optional)"
-        >
+        <!--  <label for="suggestion-name">Your name (optional)</label> -->
+          <input
+            type="text"
+            id="suggestion-name"
+            name="suggestedBy"
+            maxlength="100"
+            placeholder="Your name (optional)"
+          >
 
-      <!--  <label for="suggestion-name">Your name (optional)</label> -->
-        <input
-          type="text"
-          id="suggestion-name"
-          name="suggestedBy"
-          maxlength="100"
-          placeholder="Your name (optional)"
-        >
+        <!--  <label for="suggestion-reason">Why do you recommend it? (optional)</label> -->
+          <textarea
+            id="suggestion-reason"
+            name="reason"
+            rows="3"
+            maxlength="1000"
+            placeholder="What makes this a good book group pick? (optional)"
+          ></textarea>
 
-      <!--  <label for="suggestion-reason">Why do you recommend it? (optional)</label> -->
-        <textarea
-          id="suggestion-reason"
-          name="reason"
-          rows="3"
-          maxlength="1000"
-          placeholder="What makes this a good book group pick? (optional)"
-        ></textarea>
+          <button type="submit">
+            Submit Suggestion
+          </button>
 
-        <button type="submit">
-          Submit Suggestion
-        </button>
+          <p id="book-suggestion-status" aria-live="polite"></p>
 
-        <p id="book-suggestion-status" aria-live="polite"></p>
-
-      </form>
-    </div>
-  </details>
-
+        </form>
+      </div>
+    </details>
+  </div>
 </div>
-
-<hr>
 
 <h2 id="location">Location</h2>
 <div class="church-location">

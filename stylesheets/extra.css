@@ -485,6 +485,30 @@
   }
 }
 
+/* Subtle background for the Get Involved section */
+.get-involved-section {
+  background: #f6edef;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.get-involved-section h2 {
+  margin-top: 0;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .get-involved-section {
+  background: #292329;
+}
+
+/* Mobile spacing */
+@media (max-width: 800px) {
+  .get-involved-section {
+    padding: 1rem;
+  }
+}
+
+
 /* ==========================================
    GET INVOLVED — DARK MODE
    ========================================== */
