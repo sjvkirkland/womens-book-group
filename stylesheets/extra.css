@@ -202,6 +202,8 @@
   color: var(--md-default-fg-color);
   font-family: inherit;
   font-size: 0.7rem; 
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
 }
  
 .book-suggestion-form input:focus,
@@ -234,11 +236,11 @@
    HIDE THE BOOK SUGGESTION SPAM TRAP
    ========================================== */
 
-.suggestion-honeypot {
+/* Hide spam-trap fields in both forms */
+.form-honeypot {
   position: absolute;
   left: -10000px;
   width: 1px;
   height: 1px;
   overflow: hidden;
 }
-
