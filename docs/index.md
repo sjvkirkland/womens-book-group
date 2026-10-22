@@ -25,6 +25,55 @@ No need to bring anything - just yourself.
   <p>Loading upcoming books...</p>
 </div>
 
+## Suggest a Book
+
+Have a book you'd love to read with the group? Share your suggestion! We're always looking for ideas for future meetings.
+
+<form id="book-suggestion-form" class="book-suggestion-form">
+
+  <label for="suggestion-book">Book title *</label>
+  <input
+    type="text"
+    id="suggestion-book"
+    name="book"
+    required
+    maxlength="200"
+  >
+
+  <label for="suggestion-author">Author</label>
+  <input
+    type="text"
+    id="suggestion-author"
+    name="author"
+    maxlength="200"
+  >
+
+  <label for="suggestion-name">Your name (optional)</label>
+  <input
+    type="text"
+    id="suggestion-name"
+    name="suggestedBy"
+    maxlength="100"
+    placeholder="Leave blank to suggest anonymously"
+  >
+
+  <label for="suggestion-reason">Why do you recommend it? (optional)</label>
+  <textarea
+    id="suggestion-reason"
+    name="reason"
+    rows="3"
+    maxlength="1000"
+    placeholder="What makes this a good book group pick?"
+  ></textarea>
+
+  <button type="submit">
+    Submit Suggestion
+  </button>
+
+  <p id="book-suggestion-status" aria-live="polite"></p>
+
+</form>
+
 ## Location
 
 <div class="church-location">

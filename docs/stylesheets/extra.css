@@ -183,3 +183,55 @@
     flex-basis: auto;
   }
 }
+
+/* ==========================================
+   BOOK SUGGESTION FORM STYLING
+   ========================================== */
+
+.book-suggestion-form {
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+.book-suggestion-form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.book-suggestion-form input,
+.book-suggestion-form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 6px;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+}
+
+.book-suggestion-form input:focus,
+.book-suggestion-form textarea:focus {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+.book-suggestion-form button {
+  margin-top: 1rem;
+  padding: 0.65rem 1.25rem;
+  border: 0;
+  border-radius: 6px;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.book-suggestion-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
