@@ -47,11 +47,14 @@
             return;
           }
 
-          const payload =
-            JSON.stringify({
-              name: name,
-              email: email
-            });
+          const payload = JSON.stringify({
+            name: name,
+            email: email,
+            website: document
+              .getElementById("subscribe-website")
+              .value
+              .trim()
+          });
 
           const queued =
             navigator.sendBeacon(

@@ -33,7 +33,7 @@ Have a book you'd love to read with the group? Share your suggestion! We're alwa
 
   <!-- Spam trap: leave this field empty -->
   <div
-    class="suggestion-honeypot"
+    class="form-honeypot"
     aria-hidden="true"
   >
     <label for="suggestion-website">
@@ -48,39 +48,41 @@ Have a book you'd love to read with the group? Share your suggestion! We're alwa
     >
   </div>
 
-  <label for="suggestion-book">Book title *</label>
+<!--  <label for="suggestion-book">Book title *</label> -->
   <input
     type="text"
     id="suggestion-book"
     name="book"
     required
     maxlength="200"
+    placeholder="Book title (required)"
   >
 
-  <label for="suggestion-author">Author</label>
+<!--  <label for="suggestion-author">Author</label> -->
   <input
     type="text"
     id="suggestion-author"
     name="author"
     maxlength="200"
+    placeholder="Author (optional)"
   >
 
-  <label for="suggestion-name">Your name (optional)</label>
+<!--  <label for="suggestion-name">Your name (optional)</label> -->
   <input
     type="text"
     id="suggestion-name"
     name="suggestedBy"
     maxlength="100"
-    placeholder="Leave blank to suggest anonymously"
+    placeholder="Your name (optional)"
   >
 
-  <label for="suggestion-reason">Why do you recommend it? (optional)</label>
+<!--  <label for="suggestion-reason">Why do you recommend it? (optional)</label> -->
   <textarea
     id="suggestion-reason"
     name="reason"
     rows="3"
     maxlength="1000"
-    placeholder="What makes this a good book group pick?"
+    placeholder="What makes this a good book group pick? (optional)"
   ></textarea>
 
   <button type="submit">
@@ -126,10 +128,21 @@ Have a book you'd love to read with the group? Share your suggestion! We're alwa
         upcoming book selections, and special announcements. 
     </p>
     <p>
-        If you have any questions, contact Angela Bartz at <a mailto:abartzmail@gmail.com>abartzmail@gmail.com</a>.
+        If you have any questions, contact Angela Bartz at <a href="mailto:abartzmail@gmail.com">abartzmail@gmail.com</a>.
     </p>
 
     <form id="subscribeForm">
+
+        <!-- Spam protection: hidden honeypot field -->
+        <div class="form-honeypot" aria-hidden="true">
+            <label for="subscribe-website">Website</label>
+            <input
+                type="text"
+                id="subscribe-website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off">
+        </div>
 
         <input
             type="text"
