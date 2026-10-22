@@ -58,5 +58,5 @@ extra_javascript:
 
 # Site navigation
 nav: 
-  - Home: index.md
+  - Welcome: index.md
   - Previous Books: previous-books.md
