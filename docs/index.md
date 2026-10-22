@@ -74,6 +74,8 @@ Have a book you'd love to read with the group? Share your suggestion! We're alwa
 
 </form>
 
+<small>* indicates required field. </small>
+
 ## Location
 
 <div class="church-location">
