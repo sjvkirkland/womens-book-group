@@ -167,7 +167,7 @@
 
 /* Stack panels on smaller screens */
 
-@media (max-width: 800px) {
+@media (max-width: 1032px) {
   .welcome-hero {
     grid-template-columns: 1fr;
   }
@@ -176,9 +176,9 @@
     padding: 2rem 1.5rem;
   }
 
+  /* Hide the banner image on mobile */
   .welcome-hero-image {
-    height: 280px;
-    min-height: 0;
+    display: none;
   }
 }
 
