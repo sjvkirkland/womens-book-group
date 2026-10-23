@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Recent Previous Books
+# Previous Books
 
 Below are some recent books that we've read.
 
