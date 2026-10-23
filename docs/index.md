@@ -4,6 +4,7 @@ hide:
   - toc
 ---
 
+<h1 class="homepage-title-anchor">Welcome</h1>
 
 <div class="welcome-hero">
 
